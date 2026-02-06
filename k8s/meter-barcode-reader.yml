@@ -1,0 +1,7 @@
+containers:
+- name: cuda-test
+  image: pornchai/gpu-test:latest
+  command: ["nvidia-smi"]
+  resources:
+    limits:
+      nvidia.com/gpu: 1
